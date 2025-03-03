@@ -1,4 +1,3 @@
-
 import React from "react";
 import Layout from "@/components/Layout";
 import {
@@ -36,7 +35,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { DatePicker } from "@/components/ui/calendar";
+import { DatePicker } from "@/components/ui/date-picker";
 import { useTheme } from "@/hooks/use-theme";
 
 const Reports = () => {
