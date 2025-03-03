@@ -93,7 +93,7 @@ const Index = () => {
         <div>
           <h1 className="text-2xl font-bold tracking-tight">Dashboard</h1>
           <p className="text-muted-foreground">
-            Ringkasan aktivitas parkir BUMDes hari ini
+            Ringkasan aktivitas parkir PARKIROW hari ini
           </p>
         </div>
         

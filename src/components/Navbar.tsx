@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleSidebar }) => {
               <path d="M12 6v12M6 12h12" />
             </svg>
           </div>
-          <span className="font-semibold text-lg">Parkirow</span>
+          <span className="font-semibold text-lg">PARKIROW</span>
         </Link>
       </div>
       
