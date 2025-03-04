@@ -1,4 +1,3 @@
-
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -73,14 +72,14 @@ const AppSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
                     to={item.path}
                     className={({ isActive }) =>
                       cn(
-                        "flex items-center px-3 py-2 rounded-md transition-all hover:bg-sidebar-accent group",
+                        "flex items-center px-3 py-2 rounded-md transition-all hover:bg-gray-200 dark:hover:bg-gray-800 group",
                         isActive 
-                          ? "bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary/90" 
-                          : "text-black dark:text-white font-bold" // Fixed: explicitly use black for light mode, white for dark mode
+                          ? "bg-primary text-primary-foreground" 
+                          : "text-gray-700 dark:text-gray-200"
                       )
                     }
                   >
-                    <item.icon className={cn("h-5 w-5", isOpen ? "text-black dark:text-white" : "")} /> {/* Ensure icon is also visible */}
+                    <item.icon className="h-5 w-5 text-gray-700 dark:text-gray-200" />
                     <span
                       className={cn(
                         "ml-3 text-sm font-medium transition-opacity",
