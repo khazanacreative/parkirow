@@ -36,11 +36,11 @@
 
     /* Improved sidebar colors with better contrast for light mode */
     --sidebar-background: 220 14% 96%;
-    --sidebar-foreground: 0 0% 0%;
+    --sidebar-foreground: 0 0% 0%; /* Pure black for maximum contrast in light mode */
     --sidebar-primary: 210 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 217 33% 90%;
-    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-accent-foreground: 0 0% 0%; /* Pure black for hover state text in light mode */
     --sidebar-border: 210 40% 90%;
     --sidebar-ring: 217 91% 60%;
   }

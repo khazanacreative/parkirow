@@ -76,11 +76,11 @@ const AppSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
                         "flex items-center px-3 py-2 rounded-md transition-all hover:bg-sidebar-accent group",
                         isActive 
                           ? "bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary/90" 
-                          : "text-sidebar-foreground font-bold" // Changed from medium to bold for better visibility
+                          : "text-black dark:text-white font-bold" // Fixed: explicitly use black for light mode, white for dark mode
                       )
                     }
                   >
-                    <item.icon className="h-5 w-5" />
+                    <item.icon className={cn("h-5 w-5", isOpen ? "text-black dark:text-white" : "")} /> {/* Ensure icon is also visible */}
                     <span
                       className={cn(
                         "ml-3 text-sm font-medium transition-opacity",
