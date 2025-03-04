@@ -59,7 +59,7 @@ const AppSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   return (
     <aside 
       className={cn(
-        "fixed inset-y-0 left-0 z-40 flex flex-col bg-card border-r pt-16 transition-all duration-300 ease-in-out",
+        "fixed inset-y-0 left-0 z-40 flex flex-col bg-sidebar border-r pt-16 transition-all duration-300 ease-in-out",
         isOpen ? "w-64 translate-x-0" : "w-0 -translate-x-full md:w-16 md:translate-x-0",
       )}
     >
@@ -73,10 +73,10 @@ const AppSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
                     to={item.path}
                     className={({ isActive }) =>
                       cn(
-                        "flex items-center px-3 py-2 rounded-md transition-all hover:bg-secondary group",
+                        "flex items-center px-3 py-2 rounded-md transition-all hover:bg-sidebar-accent group",
                         isActive 
-                          ? "bg-primary text-primary-foreground hover:bg-primary/90" 
-                          : "text-foreground"
+                          ? "bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary/90" 
+                          : "text-sidebar-foreground font-medium"
                       )
                     }
                   >

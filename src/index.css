@@ -34,14 +34,14 @@
 
     --radius: 0.75rem;
 
-    /* Improved sidebar colors for better visibility in light mode */
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 222 47% 11%;
+    /* Improved sidebar colors with better contrast for light mode */
+    --sidebar-background: 220 14% 96%;
+    --sidebar-foreground: 222 47% 20%;
     --sidebar-primary: 210 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 210 40% 94%;
+    --sidebar-accent: 217 33% 90%;
+    --sidebar-accent-foreground: 222 47% 20%;
+    --sidebar-border: 210 40% 90%;
     --sidebar-ring: 217 91% 60%;
   }
 
