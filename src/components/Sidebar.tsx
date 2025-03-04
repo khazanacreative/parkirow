@@ -74,7 +74,9 @@ const AppSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
                     className={({ isActive }) =>
                       cn(
                         "flex items-center px-3 py-2 rounded-md transition-all hover:bg-secondary group",
-                        isActive ? "bg-primary text-primary-foreground hover:bg-primary/90" : "text-foreground"
+                        isActive 
+                          ? "bg-primary text-primary-foreground hover:bg-primary/90" 
+                          : "text-foreground"
                       )
                     }
                   >
