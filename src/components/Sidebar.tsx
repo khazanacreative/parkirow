@@ -76,7 +76,7 @@ const AppSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
                         "flex items-center px-3 py-2 rounded-md transition-all hover:bg-sidebar-accent group",
                         isActive 
                           ? "bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary/90" 
-                          : "text-sidebar-foreground font-medium"
+                          : "text-sidebar-foreground font-bold" // Changed from medium to bold for better visibility
                       )
                     }
                   >
