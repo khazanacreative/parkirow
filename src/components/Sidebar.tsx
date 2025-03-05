@@ -1,3 +1,4 @@
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -79,15 +80,17 @@ const AppSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
                       )
                     }
                   >
-                    <item.icon className="h-5 w-5 text-gray-700 dark:text-gray-200" />
-                    <span
-                      className={cn(
-                        "ml-3 text-sm font-medium transition-opacity",
-                        !isOpen && "md:hidden"
-                      )}
-                    >
-                      {item.label}
-                    </span>
+                    <div className="flex items-center">
+                      <item.icon className="h-5 w-5 text-gray-700 dark:text-gray-200" />
+                      <span
+                        className={cn(
+                          "ml-3 text-sm font-medium transition-opacity",
+                          !isOpen && "md:hidden"
+                        )}
+                      >
+                        {item.label}
+                      </span>
+                    </div>
                   </NavLink>
                 </TooltipTrigger>
                 <TooltipContent side="right" className={cn("ml-1", isOpen && "md:hidden")}>
